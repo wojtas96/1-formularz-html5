@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formularze</title>
+    <title>1-formularz-html5</title>
 </head>
 <body>
     <form 
     action="https://formspree.io/f/xeqwavzv"
     method="POST"
     >
-        <input type="text" name="username"> imię
+        <label><input type="text" name="username"> Imię</label>
         <br>
-        <input type="text" name="username"> nazwisko
+        <label><input type="text" name="username"> Nazwisko</label>
         <br>
-        <input type="email" name="mail"> mail
+        <label><input type="email" name="mail"> Mail</label>
         <br>
-        <input type="number" name="quanity"> telefon
+        <label><input type="number" name="quanity"> Telefon</label>
         <br>
-        <select name="select">
-            <option value="value1" selected>wybór miasta</option>
-            <option value="value2">Gdańsk</option>
-            <option value="value3">Kraków</option>
-            <option value="value4">Warszawa</option>
+        <label for="city"> Wybór miasta:</label>
+        <select id="city">
+            <option label="Gdańsk">Gdańsk</option>
+            <option label="Kraków">Kraków</option>
+            <option label="Warszawa">Warszawa</option>
         </select>
         <br>
-        <input type="radio" name="gender"> Kobieta 
-        <input type="radio" name="gender"> Mężczyzna
+        <label><input type="radio" name="gender"> Kobieta</label>
+        <label><input type="radio" name="gender"> Mężczyzna</label>
         <br>
-        <input type="checkbox" name="dane" required> zgoda na dane osobowe
+        <label><input type="checkbox" name="dane" required> Zgoda na dane osobowe</label>
         <br>
             <textarea cols="20" name="message">Wiadomość...</textarea>
         <br>
-        <input type="submit" value="Wyślij">
+        <label><input type="submit" value="Wyślij"></label>
     </form>
 </body>
 </html>
